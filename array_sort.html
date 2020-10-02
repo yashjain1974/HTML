@@ -1,33 +1,25 @@
-
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
- <p id="sort"></p>
+    <title>Sorting</title>
     <script>
-        var n = prompt("Enter number of elements in array:");
-      var numb = [];
-        for( var i = 0 ; i < n ; i++){
-          numb.push(prompt("Enter value: " + (i+1)));
-        }
-  //  document.getElementById("sort").innerHTML ='Before sorting the array :' + numb+'<br>';
-    document.write('Before sorting the array :' + numb+'<br>');
-    function compare() {
-
-  numb.sort(function(a, b){return a - b});
-
-  document.getElementById("sort").innerHTML = 'After sorting the array :' + numb;
-}
+    	function compare() {
+    		var n = prompt("Enter number of elements in array:");
+      		var numb = [];
+        	for( var i = 0 ; i < n ; i++){
+          		numb.push(prompt("Enter value: " + (i+1)));
+        	}
+        	document.write('Before sorting the array :' + numb+'<br>');
+    		numb.sort(function(a, b){return a - b});
+  			document.write('After sorting the array :' + numb);
+		}
 
 
     </script>
-
-    <p>Click the button to sort the array in ascending order.</p>
-
-    <button onclick ="compare()">Click for sorting</button>
-
+  </head>
+  <body>
+ 	<p id="sort"></p>
+	<p>Click the button to sort the array in ascending order.</p>
+	<button onclick ="compare()">Click for sorting</button>
   </body>
 </html>
