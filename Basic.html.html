@@ -1,8 +1,174 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
-<tittle style="color:purple" ><marquee direction="right"><strong>SIMPLE BASIC HTML TAGS</strong></marquee></tittle>
+<tittle style="color:purple" ><marquee direction="right"><strong>SIMPLE BASIC 
+
+HTML TAGS</strong></marquee></tittle>
 <style>
+.btn-21 {
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Marvel;
+  font-size: 50px;
+  width: 70%;
+  height: 105px;
+  position: relative;
+  left:200px;
+  color: #707;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0px;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.btn-21:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #fbf);
+  animation: btn-21-right 2s linear infinite;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-21:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #bfb);
+  animation: btn-21-bottom 2s linear infinite;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+}
+
+.btn-21 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+
+.btn-21 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #bfb);
+  animation: btn-21-left 2s linear infinite;
+}
+
+.btn-21 span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #bfb);
+  animation: btn-21-top 2s linear infinite;
+  animation-delay: 1s;
+  transform: translateY(-100%);
+}
+
+.btn-21:hover:before {
+  background: linear-gradient(to right, transparent, red);
+}
+
+.btn-21:hover:after {
+  background: linear-gradient(to bottom, transparent, red);
+}
+
+.btn-21 span:hover:before {
+  background: linear-gradient(to top, transparent, red);
+}
+
+.btn-21 span:hover:after {
+  background: linear-gradient(to left, transparent, red);
+}
+
+.btn-21:hover {
+  color: red;
+}
+
+.btn-21:active:before {
+  background: linear-gradient(to right, transparent, #00d7fc);
+}
+
+.btn-21:active:after {
+  background: linear-gradient(to bottom, transparent, #00a7fc);
+}
+
+.btn-21 span:active:before {
+  background: linear-gradient(to top, transparent, #00a7fc);
+}
+
+.btn-21 span:active:after {
+  background: linear-gradient(to left, transparent, #00a7fc);
+}
+
+.btn-21:active {
+  color: #00a7fc;
+}
+
+@keyframes btn-21-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+@keyframes btn-21-top {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+
+}
+
+@keyframes btn-21-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+
+}
+
+@keyframes btn-21-bottom {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+
+}
+
+.btn-21:focus {
+  outline: none
+}
 marquee{
 	font-style: oblique;
 	font-weight: bold;
@@ -45,8 +211,14 @@ body{
 <body>
 
 	<hr>
-	<div><mark><strong style="font-size:25px">NOTE :</strong></mark>THIS PAGE IS JUST THE BASIC USE OF ALL THE BASICS TAGS.</div>
-	<h2 class="center"><strong><u style="color:red">HEADINGS IN HTML</u></strong></h2>
+	<div><mark><strong style="font-size:25px">NOTE 
+
+:</strong></mark>THIS PAGE IS JUST THE BASIC USE OF ALL THE BASICS 
+
+TAGS.</div>
+	<h2 class="center"><strong><u style="color:red">HEADINGS IN 
+
+HTML</u></strong></h2>
 	<h1> 1) This text is in h1 heading</h1>
 	<h2> 2) This text is in h2 heading</h2>
 	<h3> 3) This text is in h3 headng</h3>
@@ -56,12 +228,18 @@ body{
 	<hr>
 	<hr>
 	<section>
-		<h2 class="center"><strong><u style="color:red">USE of < p> and < hr> tag</pre></u></strong></h2>
-	<h2><strong>WE are using < p> tag for writing a paragarph in the html code and < hr> tag for the horizontal lines. </strong></h2>
+		<h2 class="center"><strong><u style="color:red">USE of < p> 
+
+and < hr> tag</pre></u></strong></h2>
+	<h2><strong>WE are using < p> tag for writing a paragarph in the html 
+
+code and < hr> tag for the horizontal lines. </strong></h2>
 </section>
 	<hr><hr>
 	<div id="basic">
-	<h2 class="center"><strong><u style="color:red">USE of < br> and < pre> tag</pre></u></strong></h2>
+	<h2 class="center"><strong><u style="color:red">USE of < br> and < 
+
+pre> tag</pre></u></strong></h2>
 	<p>Use<b> <em>< br></em></b> tag <br> to break the line</br><p>
 	<p>Use of <em><b>< pre></b></em> for the following address.</p>
 	<pre>
@@ -76,7 +254,9 @@ body{
 	<hr><hr>
 	<article>
 		<header>
-	<h2 class="center"><strong><u style="color:red">ORDERED LIST AND UNORDERED LIST</u></strong></h2>
+	<h2 class="center"><strong><u style="color:red">ORDERED LIST AND 
+
+UNORDERED LIST</u></strong></h2>
 
 
 	<h3>SAMPLE FOR ORDERED LIST</h3>
@@ -98,7 +278,9 @@ body{
 	</header>
 	<hr><hr>
 	<section id="unique">
-	<h2 style="list-style-type:circle" class="center" ><strong><u style="color:red">USES OF PHYSICAL TAGS</u></strong></h2>
+	<h2 style="list-style-type:circle" class="center" ><strong><u 
+
+style="color:red">USES OF PHYSICAL TAGS</u></strong></h2>
 	<li>This text is normal.</li>
 <li><strong>This text is important!</strong></li>
 <li><i>This text is italic</i></li>
@@ -112,36 +294,60 @@ body{
 </section>
 <hr><hr>
 
-<h2 class="center"><strong><u style="color:red">USE OF PHYSICAL TAGS</u></strong></h2>
+<h2 class="center"><strong><u style="color:red">USE OF PHYSICAL 
+
+TAGS</u></strong></h2>
 <section id="basic">
 <li>Hypertext Markup Language <del>html</del> HTML.</li>
 <li>Shortform of Cascading Style Sheets is  <ins>CSS</ins>.</li>
 <li><em>This text is emphasized</em></li>
 <li>< abbr> tag</li>
-		<p><dfn><abbr title="Hyper Text Markup Language">HTML</abbr></dfn> describes the structure of Web pages using markup.</p>
-<li>Blockquote</li>
-<blockquote cite="https://www.hostinger.in/tutorials/what-is-html">HTML stands for Hypertext Markup Language. It allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+		<p><dfn><abbr title="Hyper Text Markup 
 
-HTML is not a programming language, meaning it doesn’t have the ability to create dynamic functionality. Instead, it makes it possible to organize and format documents, similarly to Microsoft Word.
+Language">HTML</abbr></dfn> describes the structure of Web pages using 
+
+markup.</p>
+<li>Blockquote</li>
+<blockquote cite="https://www.hostinger.in/tutorials/what-is-html">HTML stands 
+
+for Hypertext Markup Language. It allows the user to create and structure sections, 
+
+paragraphs, headings, links, and blockquotes for web pages and applications.
+
+HTML is not a programming language, meaning it doesn’t have the ability to create 
+
+dynamic functionality. Instead, it makes it possible to organize and format 
+
+documents, similarly to Microsoft Word.
 </blockquote>
 <li> < code> tag</li>
 <p>The function <code>selectAll()</code> highlights all the text in the
 input field so the user can, for example, copy or delete the text.</p>
 <li>Datetime tag</li>
-<p>I was born on <time datetime="2000-09-10">September 19,2000</time> in Pune ,Maharasstra.</p>
+<p>I was born on <time datetime="2000-09-10">September 19,2000</time> in 
+
+Pune ,Maharasstra.</p>
 <li>< var> tag</li>
-<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where 
+
+<var>l</var> represents the length, <var>w</var> the width and <var>h</var> the 
+
+height of the box.</p>
 <li>Keyboard Input Text</li>
 <p>Please press <kbd>Ctrl</kbd> + <kbd>Z</kbd> for UNDO command.</p>
 <li>< q> tag</li>
-<p>Once a great leader said: <q>The only thing that’s stopping you is YOU. Rests are just excuses.</q></p>
+<p>Once a great leader said: <q>The only thing that’s stopping you is YOU. Rests 
 
+are just excuses.</q></p>
+<button class="btn-21">Animated Button</button>
 
 	<li>The address element in footer</li>
 </section>
 <footer>
 	<address>
-	Submitted By: <a href="mailto:bhekeruchi19@gmail.com">Ruchi Bheke</a>.<br>
+	Submitted By: <a href="mailto:bhekeruchi19@gmail.com">Ruchi 
+
+Bheke</a>.<br>
 	Visit us at:<br>
 	Example.com<br>
 	plot no. 564, SwarajNagari<br>
